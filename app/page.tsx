@@ -42,7 +42,7 @@ export default async function Home({
   const trips = await getTrips(searchParams);
 
   return (
-    <div className="min-h-screen container">
+    <main className="min-h-screen container">
       <div className="flex justify-between items-start p-6">
         <div className="flex gap-x-2 items-center">
           <CarTaxiFront className="size-[26px]" />
@@ -96,6 +96,6 @@ export default async function Home({
       ) : (
         <div className="text-center text-2xl p-6 w-full">No trips found</div>
       )}
-    </div>
+    </main>
   );
 }
